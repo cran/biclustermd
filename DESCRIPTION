@@ -1,7 +1,7 @@
 Package: biclustermd
 Type: Package
 Title: Biclustering with Missing Data
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("John", "Reisner", email = "johntreisner@gmail.com", role = c("cre", "aut", "cph")),
     person("Hieu", "Pham", email = "phieu93@gmail.com", role = c("ctb", "cph")),
@@ -13,8 +13,8 @@ Description: Biclustering is a statistical learning technique that simultaneousl
     computational mechanisms, this package uses a greedy heuristic. The algorithm 
     featured in this package is, to the best our knowledge, the first biclustering 
     algorithm to work on data with missing values. Li, J., Reisner, J., Pham, H., 
-    Olafsson, S., and Vardeman, S. (2019) Biclustering for Missing Data. Information 
-    Sciences, Submitted.
+    Olafsson, S., and Vardeman, S. (2020) Biclustering with Missing Data. Information 
+    Sciences, 510, 304–316.
 URL: http://github.com/jreisner/biclustermd
 BugReports: http://github.com/jreisner/biclustermd/issues
 Depends: ggplot2 (>= 3.0.0), R (>= 3.5.0), tidyr (>= 0.8.1)
@@ -28,9 +28,9 @@ RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-09-21 01:22:48 UTC; johnreisner
+Packaged: 2019-12-07 01:06:31 UTC; johnreisner
 Author: John Reisner [cre, aut, cph],
   Hieu Pham [ctb, cph],
   Jing Li [ctb, cph]
 Repository: CRAN
-Date/Publication: 2019-09-30 11:40:06 UTC
+Date/Publication: 2019-12-07 05:20:02 UTC
