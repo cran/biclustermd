@@ -1,11 +1,11 @@
-de821e4de2dcd9336e8137abe14898cf *DESCRIPTION
+181b2d02fb56b61b603ad89abb686ef8 *DESCRIPTION
 6eee255e2d56fd0fea0e193c4632e74a *LICENSE
-a43d7ab9415fbc063aa60b2101556213 *NAMESPACE
+fb8333d36953ecaa82ca08619e1d96ab *NAMESPACE
 9a728ae5eea88d521c8abc55922b9291 *R/as.Biclust.R
 e1576c328f855d0a963a0703f718603b *R/autoplot.biclustermd.R
 bab0c018117c30ce28e8b5c2669faaee *R/autoplot.biclustermd_sim.R
 d8be7b5b1c66aa1bb5b84b971c1aa07c *R/autoplot.biclustermd_sse.R
-d3ad4e7f5b864851836999bb3d8e6cb1 *R/biclustermd.R
+69f252f20ae3b2bba212f7b7b37c12a0 *R/biclustermd.R
 a8f8492715dc2092468f8fc1b76c634d *R/binary_vector_gen.R
 30827f109e24574879615aab5a547a63 *R/cell_heatmap.R
 e36b8cdd5a22430f02bad5db15cbcc04 *R/cell_mse.R
@@ -13,7 +13,7 @@ e2ba154af98a3ce19c893a3b21b9ac9c *R/cluster_iteration_sum_sse.R
 12cdb725f53c00d838d10d48b0f9af5f *R/col.names.R
 b50348d630d4c565371bd555e331298a *R/col.names.biclustermd.R
 ede0ce3dba4804189087a818c6c78fc3 *R/col_cluster_names.R
-2d1d3c9362fa4a9cc928f945ead5167a *R/compare_biclusters.R
+7ab46f96927dabdf6aed39222fe87f00 *R/compare_biclusters.R
 16b4b12fb395acdec90865f0cec16328 *R/fill_empties_P.R
 77439ce278ca0946dc8b7e8d5e1bf54e *R/fill_empties_Q.R
 a98511387de0b3b78dd0539c2329e17e *R/format_partition.R
@@ -26,7 +26,7 @@ d657d5f4da0aeadbe0c57af3456cd136 *R/partition_gen.R
 fe4e559327c13005f3b96309a628886a *R/position_finder.R
 ec82ba0edd2c467e2ee16e76c86d3c10 *R/print.R
 4cf6a109dddda02e3cbe0e2964c7b9e8 *R/reorder_biclust.R
-7a29b0241db1e70b50f857f1535e71e9 *R/rep_biclustermd.R
+9c4a0fb619c2c8f6d1fcffa4a6c11eb0 *R/rep_biclustermd.R
 c77898ac8d749e7197bf56bc27c9f933 *R/results_heatmap.R
 bb439f50301c0ddb54eaff34801758d1 *R/row.names.biclustermd.R
 cc6d01175e19efdad7cad0a870e99b41 *R/row_cluster_names.R
@@ -39,12 +39,12 @@ a88e7ac6102f639a7b582b1ae8cd96ff *data/runtimes.rda
 6e28f497183243105ecb065b3f899749 *data/synthetic.rda
 5db1bda875931dbf46e636cea6a6b1ff *inst/doc/Airports.R
 68a88f648a1e8762843e147ab9043bf4 *inst/doc/Airports.Rmd
-fb33a24ed8c6bb5f86dbdeb507ac01b6 *inst/doc/Airports.html
+121f4cd7497e704e6bdc38dd50d4b5ca *inst/doc/Airports.html
 1aa593b2abccea4b3a63cbe2a19d2b4d *man/as.Biclust.Rd
 9eeaf8fd37c2c9ea1513d7e721b9794d *man/autoplot.biclustermd.Rd
 d9ea794e802a7ca0257671cbe1ee2b4a *man/autoplot.biclustermd_sim.Rd
 a7035fa4f5697fa850dfc5779c46dece *man/autoplot.biclustermd_sse.Rd
-ec793673be41aee4fc42fa89d9214330 *man/biclustermd.Rd
+965fd0abc7b8467c8947181795348304 *man/biclustermd.Rd
 0514bb467a24531146797ed9da4cf751 *man/binary_vector_gen.Rd
 e5061e95a85b121c2fe8b9ee99a1ec9c *man/cell_heatmap.Rd
 88c0ef256b6f8566c1813fc50df58e34 *man/cell_mse.Rd
@@ -64,7 +64,7 @@ d33c8a796cc44780ee60b90559cfa0c5 *man/partition_gen_by_p.Rd
 b0a52d76f3532eb6e8c57bdbb588f32c *man/position_finder.Rd
 564d9486c33e5c7e8b1e41062c502b10 *man/print.biclustermd.Rd
 6766edf950c11646a8a786f274793f60 *man/reorder_biclust.Rd
-9477262962f5d45b4815f9ed68e010b7 *man/rep_biclustermd.Rd
+9c7b014276e075bbbfd2b8ab054b490f *man/rep_biclustermd.Rd
 aaa812bcbf44efeb0ab85727a44af06c *man/results_heatmap.Rd
 e6374a9206f6ba21a1ac740676c358ca *man/row.names.biclustermd.Rd
 cf3f0a18d4c5e40263b836c54a49ddf8 *man/row_cluster_names.Rd
@@ -72,7 +72,7 @@ cf3f0a18d4c5e40263b836c54a49ddf8 *man/row_cluster_names.Rd
 a24d5963be8d735c3401ae690226823c *man/synthetic.Rd
 4d2a06aaa2196dfa55f0eeaf0149d7f2 *man/tune_biclustermd.Rd
 ffa22f717820dcaaf50792b8074f09ff *tests/testthat.R
-a4544a2fc043ba94387adf21f5383017 *tests/testthat/test-autoplot_biclustermd.R
+5d0ddb6a27d40f3c6cfdf48310a6073c *tests/testthat/test-autoplot_biclustermd.R
 d1c8a1c63856fafc038f54ec070a5993 *tests/testthat/test-autoplot_similarities.R
 aa6472a835d0657135e1a5775592b200 *tests/testthat/test-autoplot_sse.R
 ad5261881e8436a015f109d704f4d0a0 *tests/testthat/test-biclustermd.R
