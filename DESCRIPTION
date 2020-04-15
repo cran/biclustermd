@@ -1,7 +1,7 @@
 Package: biclustermd
 Type: Package
 Title: Biclustering with Missing Data
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(
     person("John", "Reisner", email = "johntreisner@gmail.com", role = c("cre", "aut", "cph")),
     person("Hieu", "Pham", email = "phieu93@gmail.com", role = c("ctb", "cph")),
@@ -28,9 +28,9 @@ RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-02-18 03:22:31 UTC; johnreisner
+Packaged: 2020-04-15 01:10:05 UTC; johnreisner
 Author: John Reisner [cre, aut, cph],
   Hieu Pham [ctb, cph],
   Jing Li [ctb, cph]
 Repository: CRAN
-Date/Publication: 2020-02-18 05:30:02 UTC
+Date/Publication: 2020-04-15 05:10:02 UTC

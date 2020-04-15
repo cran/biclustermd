@@ -1,6 +1,6 @@
-181b2d02fb56b61b603ad89abb686ef8 *DESCRIPTION
+ef034accc60dbe41f5141d219287105c *DESCRIPTION
 6eee255e2d56fd0fea0e193c4632e74a *LICENSE
-fb8333d36953ecaa82ca08619e1d96ab *NAMESPACE
+de50907ce3d2cc77abe62ea0e1fd5424 *NAMESPACE
 9a728ae5eea88d521c8abc55922b9291 *R/as.Biclust.R
 e1576c328f855d0a963a0703f718603b *R/autoplot.biclustermd.R
 bab0c018117c30ce28e8b5c2669faaee *R/autoplot.biclustermd_sim.R
@@ -17,7 +17,7 @@ ede0ce3dba4804189087a818c6c78fc3 *R/col_cluster_names.R
 16b4b12fb395acdec90865f0cec16328 *R/fill_empties_P.R
 77439ce278ca0946dc8b7e8d5e1bf54e *R/fill_empties_Q.R
 a98511387de0b3b78dd0539c2329e17e *R/format_partition.R
-67cb79cdd6729e5193eadf303cd3ec4a *R/gather.biclustermd.R
+9e42236b02385ec711b230b89ef82ad9 *R/gather.biclustermd.R
 b6897c201078de66317a761fbc5c8296 *R/globalvars.R
 b4857175b31afbe251a74ef949930e83 *R/mse_heatmap.R
 4818e0864fd05053ce7ed90c2eb5e7d8 *R/part_matrix_to_vector.R
@@ -39,7 +39,7 @@ a88e7ac6102f639a7b582b1ae8cd96ff *data/runtimes.rda
 6e28f497183243105ecb065b3f899749 *data/synthetic.rda
 5db1bda875931dbf46e636cea6a6b1ff *inst/doc/Airports.R
 68a88f648a1e8762843e147ab9043bf4 *inst/doc/Airports.Rmd
-121f4cd7497e704e6bdc38dd50d4b5ca *inst/doc/Airports.html
+70b5e21fbffa6fd2715d706a1adb9e82 *inst/doc/Airports.html
 1aa593b2abccea4b3a63cbe2a19d2b4d *man/as.Biclust.Rd
 9eeaf8fd37c2c9ea1513d7e721b9794d *man/autoplot.biclustermd.Rd
 d9ea794e802a7ca0257671cbe1ee2b4a *man/autoplot.biclustermd_sim.Rd
@@ -76,12 +76,12 @@ ffa22f717820dcaaf50792b8074f09ff *tests/testthat.R
 d1c8a1c63856fafc038f54ec070a5993 *tests/testthat/test-autoplot_similarities.R
 aa6472a835d0657135e1a5775592b200 *tests/testthat/test-autoplot_sse.R
 ad5261881e8436a015f109d704f4d0a0 *tests/testthat/test-biclustermd.R
-44032aa25ba8ab4f4a8ead1223484832 *tests/testthat/test-col.names.R
+2b77d7b0f384e543259f23cbccd821a3 *tests/testthat/test-col.names.R
 afe912f0dd2f4c3bbc886c6dce886446 *tests/testthat/test-gather.R
 1d5be5d703345307a6f4c5246ba67a74 *tests/testthat/test-part_matrix_to_vec.R
 d5182dc1d4f5407bc74106e039d1d0be *tests/testthat/test-partition_gen.R
 f7b7c2ece00d573b2edef3c5a6961b2e *tests/testthat/test-partition_gen_by_p.R
-630ad82182cf998b3e17fb0a597b2070 *tests/testthat/test-row.names.R
+1ed4721e4c3f865b291da8609d764b6f *tests/testthat/test-row.names.R
 91b15555610e945d0e4bca260ad12b97 *tests/testthat/test-sse.R
 558ef0369cbbf576fa425cfddc6c2ee9 *tests/testthat/test-synthetic.R
 68a88f648a1e8762843e147ab9043bf4 *vignettes/Airports.Rmd
