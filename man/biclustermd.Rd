@@ -3,16 +3,24 @@
 \docType{package}
 \name{biclustermd}
 \alias{biclustermd}
-\alias{biclustermd-package}
 \title{Bicluster data with non-random missing values}
 \usage{
-biclustermd(data, row_clusters = floor(sqrt(nrow(data))),
-  col_clusters = floor(sqrt(ncol(data))), miss_val = mean(data, na.rm =
-  TRUE), miss_val_sd = 1, similarity = "Rand",
+biclustermd(
+  data,
+  row_clusters = floor(sqrt(nrow(data))),
+  col_clusters = floor(sqrt(ncol(data))),
+  miss_val = mean(data, na.rm = TRUE),
+  miss_val_sd = 1,
+  similarity = "Rand",
   row_min_num = floor(nrow(data)/row_clusters),
-  col_min_num = floor(ncol(data)/col_clusters), row_num_to_move = 1,
-  col_num_to_move = 1, row_shuffles = 1, col_shuffles = 1,
-  max.iter = 100, verbose = FALSE)
+  col_min_num = floor(ncol(data)/col_clusters),
+  row_num_to_move = 1,
+  col_num_to_move = 1,
+  row_shuffles = 1,
+  col_shuffles = 1,
+  max.iter = 100,
+  verbose = FALSE
+)
 }
 \arguments{
 \item{data}{Dataset to bicluster. Must to be a data matrix with only numbers
@@ -33,7 +41,7 @@ if \code{miss_val} is a number. By default this equals 1.}
 
 \item{similarity}{The metric used to compare two successive clusterings. Can be
 "Rand" (default), "HA" for the Hubert and Arabie adjusted Rand index or "Jaccard".
-See \link[phyclust]{RRand} and \link[clusteval]{cluster_similarity} for details.}
+See \link[phyclust]{RRand} for details.}
 
 \item{row_min_num}{Minimum row prototype size in order to be eligible to be
 chosen when filling an empty row prototype. Default is \code{floor(nrow(data) / row_clusters)}.}
@@ -75,8 +83,6 @@ measure used as the stopping condition for the algorithm.}
 }
 \description{
 Bicluster data with non-random missing values
-
-Biclustering with Missing Data
 }
 \examples{
 data("synthetic")

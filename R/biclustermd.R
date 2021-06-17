@@ -1,4 +1,5 @@
 #' @title Bicluster data with non-random missing values
+#' @description Bicluster data with non-random missing values
 #'
 #' @param data Dataset to bicluster. Must to be a data matrix with only numbers
 #'     and missing values in the data set. It should have row names and column names.
@@ -13,7 +14,7 @@
 #'     if `miss_val` is a number. By default this equals 1.
 #' @param similarity The metric used to compare two successive clusterings. Can be
 #'     "Rand" (default), "HA" for the Hubert and Arabie adjusted Rand index or "Jaccard".
-#'     See \link[phyclust]{RRand} and \link[clusteval]{cluster_similarity} for details.
+#'     See \link[phyclust]{RRand} for details.
 #' @param row_min_num Minimum row prototype size in order to be eligible to be
 #'     chosen when filling an empty row prototype. Default is \code{floor(nrow(data) / row_clusters)}.
 #' @param col_min_num Minimum column prototype size in order to be eligible to be
@@ -28,7 +29,6 @@
 #' @param verbose Logical. If TRUE, will report progress.
 #' @export
 #' @importFrom phyclust RRand
-#' @importFrom clusteval cluster_similarity
 #' @importFrom stats rnorm
 #' @return A list of class \code{biclustermd}:
 #'     \item{params }{a list of all arguments passed to the function, including defaults.}
@@ -313,8 +313,10 @@ biclustermd <- function(data,
       P_sim <- RRand(P_old_vec, P_new_vec)[[2]]
       Q_sim <- RRand(Q_old_vec, Q_new_vec)[[2]]
     } else if(similarity == 'Jaccard') {
-      P_sim <- cluster_similarity(P_old_vec, P_new_vec, similarity = 'jaccard')
-      Q_sim <- cluster_similarity(Q_old_vec, Q_new_vec, similarity = 'jaccard')
+      # P_sim <- cluster_similarity(P_old_vec, P_new_vec, similarity = 'jaccard')
+      # Q_sim <- cluster_similarity(Q_old_vec, Q_new_vec, similarity = 'jaccard')
+      P_sim <- jaccard_similarity(P_old_vec, P_new_vec)
+      Q_sim <- jaccard_similarity(Q_old_vec, Q_new_vec)
     }
 
     # RIs[s, 1] <- P_sim
@@ -322,10 +324,12 @@ biclustermd <- function(data,
     # RIs[s, 3] <- s - 1
     Similarities[s, 1:2] <- unlist(RRand(P_old_vec, P_new_vec)[1:2])
     # Similarities[s, 2] <- RRand(P_old_vec, P_new_vec)[[2]]
-    Similarities[s, 3] <- cluster_similarity(P_old_vec, P_new_vec, similarity = 'jaccard')
+    # Similarities[s, 3] <- cluster_similarity(P_old_vec, P_new_vec, similarity = 'jaccard')
+    Similarities[s, 3] <- jaccard_similarity(P_old_vec, P_new_vec)
     Similarities[s, 4:5] <- unlist(RRand(Q_old_vec, Q_new_vec)[1:2])
     # Similarities[s, 5] <- RRand(Q_old_vec, Q_new_vec)[[2]]
-    Similarities[s, 6] <- cluster_similarity(Q_old_vec, Q_new_vec, similarity = 'jaccard')
+    # Similarities[s, 6] <- cluster_similarity(Q_old_vec, Q_new_vec, similarity = 'jaccard')
+    Similarities[s, 6] <- jaccard_similarity(Q_old_vec, Q_new_vec)
 
     # Similarities[s, 1:3] <- adjustedRand(P_old_vec, P_new_vec, randMethod = c("Rand", "HA", "Jaccard"))
     # Similarities[s, 4:6] <- adjustedRand(Q_old_vec, Q_new_vec, randMethod = c("Rand", "HA", "Jaccard"))
